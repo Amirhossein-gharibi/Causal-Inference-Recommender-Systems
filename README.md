@@ -39,6 +39,7 @@ This project follows a structured, multi-phase pipeline, moving from data explor
 
 * **Phase 4: Causal Analysis & Debiased Evaluation** ⚖️
     * **Causal DAG:** Designed a Directed Acyclic Graph (DAG) to map the causal pathways of selection bias.
+      <img src="Causal DAG.png" alt="Cross-Model Bias Synthesis" width="800">
     * **Propensity Modeling:** Engineered a rich feature set to train a highly accurate (AUC > 0.85) and well-calibrated XGBoost model to predict the propensity (probability) of any user-item interaction being observed.
     * **Debiased Evaluation:** Used the propensity scores to perform **Inverse Propensity Scoring (IPS)**, re-calculating model performance to give more weight to successful recommendations of unpopular "hidden gems."
 
